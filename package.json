@@ -1,0 +1,22 @@
+{
+  "name": "@usalabo/blockui",
+  "version": "0.0.2",
+  "description": "blodkui",
+  "keywords": [],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && node-sass src/index.scss dist/index.css"
+  },
+  "dependencies": {
+    "block-ui": "^2.70.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.31",
+    "@types/jquery.blockui": "^0.0.28",
+    "node-sass": "^4.13.0",
+    "typescript": "^3.7.2"
+  }
+}
