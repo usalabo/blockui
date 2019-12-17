@@ -1,5 +1,3 @@
-import 'block-ui';
-
 class BlockUI {
     private count = 0;
 

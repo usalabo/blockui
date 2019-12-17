@@ -1,4 +1,3 @@
-import 'block-ui';
 declare class BlockUI {
     private count;
     constructor();

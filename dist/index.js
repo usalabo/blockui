@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-require("block-ui");
 var BlockUI = /** @class */ (function () {
     function BlockUI() {
         this.count = 0;
