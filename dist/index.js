@@ -1,32 +1,24 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 require("block-ui");
-var $ = __importStar(require("jquery"));
-exports.default = new /** @class */ (function () {
-    function class_1() {
+var BlockUI = /** @class */ (function () {
+    function BlockUI() {
         this.count = 0;
         this.setBlockUi();
     }
-    class_1.prototype.blockUI = function () {
+    BlockUI.prototype.blockUI = function () {
         if (this.count === 0) {
             $.blockUI();
         }
         this.count++;
     };
-    class_1.prototype.unblockUI = function () {
+    BlockUI.prototype.unblockUI = function () {
         this.count--;
         if (this.count === 0) {
             $.unblockUI();
         }
     };
-    class_1.prototype.setBlockUi = function () {
+    BlockUI.prototype.setBlockUi = function () {
         $.blockUI.defaults.message = '<div class="sk-fading-circle">\
     <div class="sk-circle1 sk-circle"></div>\
     <div class="sk-circle2 sk-circle"></div>\
@@ -58,6 +50,8 @@ exports.default = new /** @class */ (function () {
         };
         $.blockUI.defaults.baseZ = 10000;
     };
-    return class_1;
-}())();
+    return BlockUI;
+}());
+;
+exports.default = new BlockUI();
 //# sourceMappingURL=index.js.map

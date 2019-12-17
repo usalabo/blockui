@@ -1,6 +1,6 @@
 {
   "name": "@usalabo/blockui",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "blodkui",
   "keywords": [],
   "main": "dist/index.js",
@@ -10,8 +10,7 @@
     "build": "tsc && node-sass src/index.scss dist/index.css"
   },
   "dependencies": {
-    "block-ui": "^2.70.1",
-    "jquery": "^3.4.1"
+    "block-ui": "^2.70.1"
   },
   "devDependencies": {
     "@types/jquery": "^3.3.31",

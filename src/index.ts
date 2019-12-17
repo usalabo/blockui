@@ -1,7 +1,6 @@
 import 'block-ui';
-import * as $ from 'jquery';
 
-export default new class {
+class BlockUI {
     private count = 0;
 
     public constructor() {
@@ -54,4 +53,5 @@ export default new class {
         };
         $.blockUI!.defaults!.baseZ = 10000;
     }
-}();
+};
+export default new BlockUI();

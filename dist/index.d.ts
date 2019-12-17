@@ -1,8 +1,10 @@
 import 'block-ui';
-declare const _default: {
-    count: number;
+declare class BlockUI {
+    private count;
+    constructor();
     blockUI(): void;
     unblockUI(): void;
-    setBlockUi(): void;
-};
+    private setBlockUi;
+}
+declare const _default: BlockUI;
 export default _default;
